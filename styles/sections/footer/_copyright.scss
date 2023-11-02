@@ -1,0 +1,34 @@
+.section-copyright {
+  .footer-container {
+    display: flex;
+    width: 1050px;
+    padding: 25px 89px;
+    display: flex;
+    align-items: center;
+    gap: 213px;
+
+    @include md-max {
+      gap: 50px;
+      align-items: flex-start;
+    }
+  }
+  .copyright {
+    flex-grow: 7;
+  }
+  .social-media {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    &__container {
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+      flex-grow: 6;
+    }
+  }
+  @include md-max {
+    .footer-container {
+      padding: 25px 80px;
+    }
+  }
+}
