@@ -8,7 +8,7 @@
   </head>
   <body>
     <section class="header-section">
-      <header>
+      <header class="header-section__header">
         <div class="navbar">
           <div class="navbar__logo">Capgemen</div>
           <div class="navbar-menu__container">
@@ -34,14 +34,14 @@
       </header>
       <div class="header-section__content">
         <div class="header-section__learn-more">
-          <h1 class="h1">
+          <h1 class="header-section__title h1">
             We Take Care<br />
             of the Future
           </h1>
-          <h4 class="h4">
+          <p class="header-section__subtitle h4">
             We know how large objects will act, <br />but things on a small
             scale.
-          </h4>
+          </p>
           <div class="header-section__buttons">
             <a class="button button--secondary button--rounded"
               >Get Quote Now</a
@@ -73,7 +73,9 @@
               alt="tool-box"
               class="card-icon"
             />
-            <h5 class="h5">Business Growing</h5>
+            <h5 class="choose-us-section__card-subtitle h5">
+              Business Growing
+            </h5>
           </div>
           <div class="choose-us-section__card dark">
             <img
@@ -81,7 +83,9 @@
               alt="shop"
               class="card-icon"
             />
-            <h5 class="h5">Digital Marketing</h5>
+            <h5 class="choose-us-section__card-subtitle h5">
+              Digital Marketing
+            </h5>
           </div>
           <div class="choose-us-section__card">
             <img
@@ -89,7 +93,9 @@
               alt="notebook"
               class="card-icon"
             />
-            <h5 class="h5">Business Growing</h5>
+            <h5 class="choose-us-section__card-subtitle h5">
+              Business Growing
+            </h5>
           </div>
         </div>
       </div>
@@ -106,40 +112,60 @@
         <div class="advice-cards">
           <div class="advice-card">
             <div class="advice-card__content">
-              <h5 class="h5">A single source of truth</h5>
+              <h5 class="advice-card__content-title h5">
+                A single source of truth
+              </h5>
               <p class="paragraph">
                 Newton thought that light was made up of particles, but then it
                 was discovered
               </p>
             </div>
-            <div class="advice-card__media single-source-of-truth"></div>
+            <img
+              class="advice-card__media single-source-of-truth"
+              src="../../assets/advice_section/single_source_of_truth.jpg"
+            />
           </div>
           <div class="advice-card">
             <div class="advice-card__content">
-              <h5 class="h5">Fastest way to organize</h5>
+              <h5 class="advice-card__content-title h5">
+                Fastest way to organize
+              </h5>
               <p class="paragraph">
                 “Quantum mechanics” is the description of the behaviour o matter
               </p>
             </div>
-            <div class="advice-card__media fastest-way-to-organaze"></div>
+            <img
+              class="advice-card__media fastest-way-to-organaze"
+              src="../../assets/advice_section/fastest_way_to_organaze.jpg"
+            />
           </div>
           <div class="advice-card">
             <div class="advice-card__content">
-              <h5 class="h5">Fastest way to take action</h5>
+              <h5 class="advice-card__content-title h5">
+                Fastest way to take action
+              </h5>
               <p class="paragraph">
                 They describe a universe consisting of bodies moving
               </p>
             </div>
-            <div class="advice-card__media get-shit-done"></div>
+            <img
+              class="advice-card__media get-shit-done"
+              src="../../assets/advice_section/get_shit_done.jpg"
+            />
           </div>
           <div class="advice-card">
             <div class="advice-card__content">
-              <h5 class="h5">Work better together</h5>
+              <h5 class="advice-card__content-title h5">
+                Work better together
+              </h5>
               <p class="paragraph">
                 They finally obtained a consistent description of the behaviour
               </p>
             </div>
-            <div class="advice-card__media work-better-together"></div>
+            <img
+              class="advice-card__media work-better-together"
+              src="../../assets/advice_section/work_better_together.jpg"
+            />
           </div>
         </div>
       </div>
@@ -159,8 +185,10 @@
           <div class="video"><img src="./assets/video.png" alt="video" /></div>
           <div class="video-description">
             <div class="video-description__header-container">
-              <h2 class="h2">Most trusted in our field</h2>
-              <p class="paragraph">
+              <h2 class="video-description__header-title h2">
+                Most trusted in our field
+              </h2>
+              <p class="video-description__header-text paragraph">
                 Most calendars are designed for teams. Slate is designed for
                 freelancers who want a simple way to plan their schedule.
               </p>
@@ -172,8 +200,12 @@
                 class="vedio-description__card-icon"
               />
               <div class="vedio-description__card-text">
-                <h5 class="h5">the quick fox jumps over the lazy dog</h5>
-                <h6 class="h6">Things on a very small scale ...</h6>
+                <h5 class="video-description__card-title h5">
+                  the quick fox jumps over the lazy dog
+                </h5>
+                <h6 class="video-description__card-subtitle h6">
+                  Things on a very small scale ...
+                </h6>
               </div>
             </div>
             <div class="video-description__card-item">
@@ -183,8 +215,12 @@
                 class="vedio-description__card-icon"
               />
               <div class="vedio-description__card-text">
-                <h5 class="h5">the quick fox jumps over the lazy dog</h5>
-                <h6 class="h6">Things on a very small scale ...</h6>
+                <h5 class="video-description__card-title h5">
+                  the quick fox jumps over the lazy dog
+                </h5>
+                <h6 class="video-description__card-subtitle h6">
+                  Things on a very small scale ...
+                </h6>
               </div>
             </div>
           </div>
@@ -193,46 +229,46 @@
     </section>
     <section class="clients-section section">
       <div class="clients-section__container section-container">
-        <div class="clients-list">
-          <div class="clients-list__item">
+        <ul class="clients-list">
+          <li class="clients-list__item">
             <img
               src="./assets/clients/hooli.svg"
               alt="hooli"
               class="client-logo"
             />
-          </div>
-          <div class="clients-list__item">
+          </li>
+          <li class="clients-list__item">
             <img
               src="./assets/clients/lyft.svg"
               alt="lyft"
               class="client-logo"
             />
-          </div>
-          <div class="clients-list__item">
+          </li>
+          <li class="clients-list__item">
             <img
               src="./assets/clients/pied-piper-hat.svg"
               alt="pied-piper-hat"
               class="client-logo"
             />
-          </div>
-          <div class="clients-list__item">
+          </li>
+          <li class="clients-list__item">
             <img
               src="./assets/clients/stripe.svg"
               alt="stripe"
               class="client-logo"
             />
-          </div>
-          <div class="clients-list__item">
+          </li>
+          <li class="clients-list__item">
             <img src="./assets/clients/aws.svg" alt="aws" class="client-logo" />
-          </div>
-          <div class="clients-list__item">
+          </li>
+          <li class="clients-list__item">
             <img
               src="./assets/clients/reddit-alien.svg"
               alt="reddit-alien"
               class="client-logo"
             />
-          </div>
-        </div>
+          </li>
+        </ul>
         <div class="subscribe-form">
           <div class="subscribe-form__content">
             <h3 class="h3 subscribe-form__title">
@@ -253,8 +289,8 @@
     <section class="contact-section">
       <div class="contact-section__container">
         <div class="contact-section__main-content">
-          <h2 class="h2">Get In Touch</h2>
-          <p class="paragraph">
+          <h2 class="contact-section__title h2">Get In Touch</h2>
+          <p class="contact-section__text paragraph">
             Problems trying to resolve the conflict between the two major realms
             of Classical physics: Newtonian mechanics
           </p>
@@ -263,27 +299,35 @@
           <div class="contact-section__card-item">
             <img src="./assets/phone.svg" alt="phone" class="card-icon" />
             <div class="contact-section__card-text">
-              <a href="mailto:georgia.young@example.com" class="h6"
+              <a
+                href="mailto:georgia.young@example.com"
+                class="contact-section__link h6"
                 >georgia.young@example.com</a
               >
-              <a href="mailto:georgia.young@ple.com" class="h6"
+              <a
+                href="mailto:georgia.young@ple.com"
+                class="contact-section__link h6"
                 >georgia.young@ple.com</a
               >
             </div>
-            <h5 class="h5">Get Support</h5>
+            <h5 class="contact-section__subtitle h5">Get Support</h5>
             <button class="button button--outlined">Submit Request</button>
           </div>
           <div class="contact-section__card-item dark">
             <img src="./assets/point.svg" alt="point" class="card-icon" />
             <div class="contact-section__card-text">
-              <a href="mailto:georgia.young@example.com" class="h6"
+              <a
+                href="mailto:georgia.young@example.com"
+                class="contact-section__link h6"
                 >georgia.young@example.com</a
               >
-              <a href="mailto:georgia.young@ple.com" class="h6"
+              <a
+                href="mailto:georgia.young@ple.com"
+                class="contact-section__link h6"
                 >georgia.young@ple.com</a
               >
             </div>
-            <h5 class="h5">Get Support</h5>
+            <h5 class="contact-section__subtitle h5">Get Support</h5>
             <button class="button button--outlined">Submit Request</button>
           </div>
           <div class="contact-section__card-item">
@@ -293,14 +337,18 @@
               class="card-icon"
             />
             <div class="contact-section__card-text">
-              <a href="mailto:georgia.young@example.com" class="h6"
+              <a
+                href="mailto:georgia.young@example.com"
+                class="contact-section__link h6"
                 >georgia.young@example.com</a
               >
-              <a href="mailto:georgia.young@ple.com" class="h6"
+              <a
+                href="mailto:georgia.young@ple.com"
+                class="contact-section__link h6"
                 >georgia.young@ple.com</a
               >
             </div>
-            <h5 class="h5">Get Support</h5>
+            <h5 class="contact-section__subtitle h5">Get Support</h5>
             <button class="button button--outlined">Submit Request</button>
           </div>
         </div>
@@ -310,8 +358,12 @@
       <section class="section-consulting footer-section">
         <div class="footer-container">
           <div class="section-consulting__text">
-            <h3 class="h3">Consulting Agency For Your Business</h3>
-            <p class="paragraph">the quick fox jumps over the lazy dog</p>
+            <h3 class="section-consulting__title h3">
+              Consulting Agency For Your Business
+            </h3>
+            <p class="section-consulting__subtitle paragraph">
+              the quick fox jumps over the lazy dog
+            </p>
           </div>
           <div class="section-consulting__button">
             <button class="button">Contact Us</button>
@@ -321,7 +373,7 @@
       <section class="section-info footer-section">
         <div class="footer-container">
           <div class="nav-column info">
-            <h5 class="h5">Company Info</h5>
+            <h5 class="nav-column__title h5">Company Info</h5>
             <ul class="nav-links">
               <li class="nav-link">
                 <a href="#" class="link">About Us</a>
@@ -332,7 +384,7 @@
             </ul>
           </div>
           <div class="nav-column legal">
-            <h5 class="h5">Legal</h5>
+            <h5 class="nav-column__title h5">Legal</h5>
             <ul class="nav-links">
               <li class="nav-link">
                 <a href="#" class="link">About Us</a>
@@ -346,7 +398,7 @@
             </ul>
           </div>
           <div class="nav-column features">
-            <h5 class="h5">Features</h5>
+            <h5 class="nav-column__title h5">Features</h5>
             <ul class="nav-links">
               <li class="nav-link">
                 <a href="#" class="link">Business Marketing</a>
@@ -360,7 +412,7 @@
             </ul>
           </div>
           <div class="nav-column recources">
-            <h5 class="h5">Resources</h5>
+            <h5 class="nav-column__title h5">Resources</h5>
             <ul class="nav-links">
               <li class="nav-link">
                 <a href="#" class="link">IOS & Android</a>
@@ -374,7 +426,7 @@
             </ul>
           </div>
           <address class="nav-column address">
-            <h5 class="h5">Get In Touch</h5>
+            <h5 class="nav-column__title h5">Get In Touch</h5>
             <div class="address-content">
               <div class="address-item">
                 <svg
@@ -403,7 +455,7 @@
                   </defs>
                 </svg>
 
-                <h6 class="h6">(480) 555-0103</h6>
+                <h6 class="addres-item__text h6">(480) 555-0103</h6>
               </div>
               <div class="address-item">
                 <svg
@@ -435,7 +487,7 @@
                     </clipPath>
                   </defs>
                 </svg>
-                <h6 class="h6">
+                <h6 class="addres-item__text h6">
                   4517 Washington Ave. Manchester, Kentucky 39495
                 </h6>
               </div>
@@ -465,7 +517,7 @@
                     </clipPath>
                   </defs>
                 </svg>
-                <h6 class="h6">debra.holt@example.com</h6>
+                <h6 class="addres-item__text h6">debra.holt@example.com</h6>
               </div>
             </div>
           </address>

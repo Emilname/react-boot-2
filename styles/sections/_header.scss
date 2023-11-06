@@ -32,9 +32,9 @@
     background-size: cover;
   }
 
-  header {
+  .header-section__header {
+    max-width: 1322px;
     width: 100%;
-
     @include md-max {
       background-color: white;
       margin-bottom: 84px;
