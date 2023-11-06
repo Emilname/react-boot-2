@@ -1,0 +1,14 @@
+.section-info {
+  background-color: var(--secondary-color-2);
+  color: white;
+  @include sm-max {
+    .footer-section {
+      padding: 25px 0;
+    }
+  }
+  .footer-container {
+    @include md-max {
+      padding: 50px 87px;
+    }
+  }
+}

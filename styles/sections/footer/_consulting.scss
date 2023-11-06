@@ -1,0 +1,14 @@
+.section-consulting {
+  padding: 0 31px;
+
+  .footer-container {
+    justify-content: space-between;
+    @include md-max {
+      align-items: center;
+      flex-direction: column;
+    }
+  }
+  .button {
+    margin-right: 38px;
+  }
+}
